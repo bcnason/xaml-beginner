@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource SystemControlPageBackgroundBaseMediumBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.4*" />
             <RowDefinition Height="0.1*" />
@@ -17,10 +17,10 @@
             <ColumnDefinition Width="0.5*" />
             <ColumnDefinition Width="0.5*" />
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="Title" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Restaurant Manager" VerticalAlignment="Bottom" Grid.Row="0" Grid.ColumnSpan="2" Foreground="{ThemeResource TextBoxButtonPressedForegroundThemeBrush}" />
-        <TextBlock x:Name="Version" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Internal Test Version" VerticalAlignment="Bottom" Grid.Row="1" Grid.ColumnSpan="2"  Foreground="{ThemeResource TextBoxButtonPressedForegroundThemeBrush}"  />
-        <Button x:Name="OrdersView" Content="**Go to Orders View**" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Foreground="{ThemeResource TextBoxButtonPressedForegroundThemeBrush}"/>
-        <Button x:Name="SubmitOrder" Content="**Submit Order**" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Foreground="{ThemeResource TextBoxButtonPressedForegroundThemeBrush}" />
+        <TextBlock x:Name="Title"  Text="Restaurant Manager" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2"  />
+        <TextBlock x:Name="Version" Text="Internal Test Version" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Grid.ColumnSpan="2" />
+        <Button x:Name="OrdersView" Content="Go to Orders View" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Click="OrdersView_Click" />
+        <Button x:Name="SubmitOrder" Content="Submit Order" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Click="SubmitOrder_Click" />
 
     </Grid>
 </Page>

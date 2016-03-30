@@ -31,5 +31,15 @@ namespace RestaurantManager
         {
 
         }
+
+        private void OrdersView_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ExpeditePage));
+        }
+
+        private void SubmitOrder_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(OrderPage));
+        }
     }
 }
