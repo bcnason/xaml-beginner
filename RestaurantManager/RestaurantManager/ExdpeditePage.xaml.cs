@@ -31,5 +31,10 @@ namespace RestaurantManager
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private void gridView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
